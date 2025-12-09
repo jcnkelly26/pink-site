@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>業務個人網站｜粉色多頁式</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdeef5;
+      color: #444;
+    }
+    header {
+      background: linear-gradient(135deg, #ff8fb1, #ffb2d9);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #fff;
+      padding: 15px 0;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 99;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ff5f9e;
+      font-weight: bold;
+      font-size: 17px;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #ff5f9e;
+    }
+    .contact-form label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: bold;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #f5b6cf;
+      border-radius: 10px;
+      font-size: 16px;
+      background: #fff8fb;
+    }
+    .contact-form button {
+      margin-top: 16px;
+      background: #ff6fa9;
+      color: white;
+      border: none;
+      padding: 14px 22px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #ff5f9e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>業務姓名</h1>
+    <p>貼心、專業、用心陪伴您的每一步</p>
+  </header>
+
+  <nav>
+    <a href="#about">關於我</a>
+    <a href="#services">服務內容</a>
+    <a href="#reviews">客戶評價</a>
+    <a href="#contact">聯絡表單</a>
+  </nav>
+
+  <section id="about">
+    <h2>關於我</h2>
+    <p>放上業務同仁的個人介紹、專業認證、經驗、服務理念或照片。</p>
+  </section>
+
+  <section id="services">
+    <h2>服務內容</h2>
+    <ul>
+      <li>個人貸款專案諮詢</li>
+      <li>企業資金周轉規劃</li>
+      <li>信用評估與貸款優化建議</li>
+      <li>客製化資金解決方案</li>
+    </ul>
+  </section>
+
+  <section id="reviews">
+    <h2>客戶評價</h2>
+    <p>可放上 3～5 則文字評價，或未來加上星星評分、截圖等內容。</p>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡我</h2>
+    <form class="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
+      <label>姓名</label>
+      <input type="text" name="name" required />
+
+      <label>電話</label>
+      <input type="text" name="phone" required />
+
+      <label>留言內容</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">送出留言</button>
+    </form>
+    <p style="color:#999;margin-top:12px;">＊可串接 Formspree / Google 表單 / LINE Notify 皆可</p>
+    <div style="text-align:center; margin-bottom:40px;">
+    <a href="https://line.me/ti/p/~kds8076" target="_blank" style="display:inline-block; background:#06C755; color:white; padding:14px 26px; border-radius:12px; font-size:18px; text-decoration:none; font-weight:bold;">
+      ➕ 一鍵加入 LINE
+    </a>
+    <p style="color:#777; margin-top:8px;">LINE ID：kds8076</p>
+  </div>
+
+</section>
+</body>
+</html>
